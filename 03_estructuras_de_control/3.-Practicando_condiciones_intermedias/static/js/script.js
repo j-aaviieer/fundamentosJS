@@ -1,124 +1,61 @@
 console.log("Conexion exitosa con JS...")
 
-// EJERCICIO 1
+// EJERCICIO 11
 // Resultado esperado en alert:
-// "Bienvenido Juan"
+// `El estudiante Juan tiene nota 6.5 y su resultado es: Excelente rendimiento`
 
-function ejercicio1() {
-    let nombre = "Juan";
-    alert(`Bienvenido ${nombre}`);
+function ejercicio11() {
+let notas = 6.5
+let nombre = "Juan"
+if(notas >= 6.0)alert(`El estudiante ${nombre} tiene un excelente rendimiento`)
+else if(notas >= 4.0)alert(`El estudiante ${nombre} esta aprobado`)
+else{alert(`El estudiante ${nombre} esta reprobado`)}
 }
 
 
-// EJERCICIO 2
+// EJERCICIO 12
 // Resultado esperado en alert:
-// "La suma es: 15"
+// `El nombre convertido es: DANIEL PÉREZ y tiene 12 caracteres`
 
-function ejercicio2() {
-    let suma2 = 10;
-    let suma1 = 5;
-    alert(`La suma es: ${suma1 + suma2}`);
+function ejercicio12() {
+let nombre = "Daniel Pérez"
+alert(`El nombre convertido es: ${nombre.toUpperCase()} y tiene ${nombre.length} caracteres`)
 }
 
 
-// EJERCICIO 3
+// EJERCICIO 13
 // Resultado esperado en alert:
-// "La resta es: 12"
+// `El correo convertido es: ejemplo@gmail.com y el resultado es: correo válido`
 
-function ejercicio3() {
-    let resta2 = 2;
-    let resta1 = 14;
-    alert(`La resta es: ${resta1 - resta2}`);
+function ejercicio13() {
+let correo = " ejemplo@gmail.com"
+if(correo.length > 15)alert(`El correo convertido es: ${correo.toLowerCase()} y el resultado es: "correo válido"`)
+else{alert(`El correo convertido es: ${correo.toLowerCase()} y el resultado es: "correo demasiado corto"`)}
 }
 
 
-// EJERCICIO 4
+// EJERCICIO 14
 // Resultado esperado en alert:
-// "La multiplicación es: 24"
+// `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
-function ejercicio4() {
-    let mult2 = 2;
-    let mult1 = 12;
-    alert(`La multiplicación es: ${mult1 * mult2}`)
+function ejercicio14() {
+let frase = "Estoy aprendiendo JavaScript"
+if(frase.length > 20) {
+alert(`La frase "${frase}" tiene ${frase.length} caracteres y corresponde a una frase larga`)
+} else if(frase.length <= 20 & frase.length > 10) {
+alert(`La frase "${frase}" tiene ${frase.length} caracteres y corresponde a una frase mediana`)
+} else {
+alert(`La frase "${frase}" tiene ${frase.length} caracteres y corresponde a una frase corta`)
+}
 }
 
-
-// EJERCICIO 5
+// EJERCICIO 15
 // Resultado esperado en alert:
-// "El promedio es: 5.7"
+// `El producto TECLADO tiene un precio final de $45000`
 
-function ejercicio5() {
-    let nota1 = 5.6;
-    let nota2 = 4.5;
-    let nota3 = 7.0;
-    let total = 3;
-    alert(`El promedio es: ${(nota1 + nota2 + nota3) / total}`)
-}
-
-
-// EJERCICIO 6
-// Resultado esperado en alert:
-// "Es mayor de edad"
-
-function ejercicio6() {
-    let edad = 23;
-    if(edad > 18) alert(`Es mayor de edad`)
-        else{
-            (`Es menor de edad`)
-        };
-}
-
-
-// EJERCICIO 7
-// Resultado esperado en alert:
-// "El número es par"
-
-function ejercicio7() {
-    let numero = 20;
-    if (numero % 2 == 0) {
-        alert(`El número es par`)
-    } else {
-        alert(`El número es impar`)
-    }
-}
-
-
-// EJERCICIO 8
-// Resultado esperado en alert:
-// "Estudiante aprobado"
-
-function ejercicio8() {
-    let nota = 4.5;
-    if (nota => 4.0){
-        alert(`Estudiante aprobado`)
-    } else {
-        alert(`Estudiante reprobado`)
-    }
-}
-
-
-// EJERCICIO 9
-// Resultado esperado en alert:
-// "Precio final con descuento: $18000"
-
-function ejercicio9() {
-    let precio = 20000;
-    let descuento = 0.1;
-    alert(`Precio final con descuento: $${precio - (precio * descuento)}`)
-
-}
-
-
-// EJERCICIO 10
-// Resultado esperado en alert:
-// "El número mayor es: 22"
-
-function ejercicio10() {
-    let num1 = 22;
-    let num2 = 18;
-    if(num1 > num2){
-        alert(`El número mayor es: ${num1}`)
-    } else {
-        alert(`El número mayor es: ${num2}`)
-    }
+function ejercicio15() {
+let producto = "TECLADO"
+let precio = 50000
+let descuento = 0.1
+alert(`El producto ${producto} tiene un precio final de $${precio - (precio * descuento)}`)
 }
